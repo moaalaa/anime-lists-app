@@ -27,9 +27,14 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/libs/bootstrap/css/bootstrap.min.css",
+              "src/assets/libs/fontawesome/css/all.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/libs/jquery/jquery.min.js",
+              "src/assets/libs/bootstrap/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
