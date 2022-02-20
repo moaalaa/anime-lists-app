@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+  color: #369;
+}
+
+h2,
+h3 {
+  color: #444;
+}
+
+body,
+input[type="text"],
+button {
+  color: #333;
+}
+
+
+/*
+
+ transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+*/

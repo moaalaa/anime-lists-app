@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>My Anime List</h2>
+
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list-group">
+                <a href="#" *ngFor="let anime of animes" [class.list-group-item-success]="anime === selectedAnime" class="list-group-item  list-group-item-action" (click)="onClick(anime)">
+                    <span class="badge badge-danger">{{ anime.id }}</span> {{ anime.name }}
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row my-3" *ngIf="selectedAnime">
+        <hr class="w-100">
+        <div class="col-md-12">
+            <h2>{{ selectedAnime.name | uppercase }} Details</h2>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="selectedAnime.name">
+                </div>
+        
+            </form>
+        </div>
+    </div>
+
+</div>
