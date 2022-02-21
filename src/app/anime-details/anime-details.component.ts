@@ -1,4 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { AnimeService } from '../animes/anime.service';
 import { Anime } from '../Contrcuts/Anime';
 
 @Component({
@@ -6,11 +9,28 @@ import { Anime } from '../Contrcuts/Anime';
   templateUrl: './anime-details.component.html',
   styleUrls: ['./anime-details.component.css']
 })
-export class AnimeDetailsComponent{
+export class AnimeDetailsComponent implements OnInit{
 
-  @Input() anime?: Anime;
+  anime?: Anime;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private animeService: AnimeService,
+    private location: Location,
+  ) { }
 
+  ngOnInit(): void {
+      this.getAnime();
+  }
+
+  getAnime(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+
+    this.animeService.getAnime(id).subscribe(anime => this.anime = anime);
+  }
+
+  goBack(): void {
+    this.location.back();
+  }
 
 }

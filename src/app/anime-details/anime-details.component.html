@@ -1,12 +1,16 @@
-<div class="row my-3" *ngIf="anime">
-    <hr class="w-100">
-    <div class="col-md-12">
-        <h2>{{ anime.name | uppercase }} Details</h2>
-        <form action="">
-            <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="anime.name">
-            </div>
+<div class="container">
+    <div class="row my-3" *ngIf="anime">
+        <hr class="w-100">
+        <div class="col-md-12">
+            <h2>{{ anime.name | uppercase }} Details</h2>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="anime.name">
+                </div>
+    
+            </form>
 
-        </form>
+            <button type="button" class="btn btn-danger" (click)="goBack()"> Go Back </button>
+        </div>
     </div>
 </div>

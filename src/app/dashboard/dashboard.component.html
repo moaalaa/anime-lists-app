@@ -1,0 +1,14 @@
+
+<div class="container">
+    <h2>Dashboard</h2>
+
+    <div class="row">
+        <div class="col-md-3" *ngFor="let anime of animes">
+            <a routerLink="/anime-details/{{ anime.id }}" class="card bg-secondary text-white text-center text-decoration-none">
+                <div class="card-body">
+                    <div class="card-title mb-0">{{ anime.name }}</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

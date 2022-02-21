@@ -4,12 +4,12 @@
     <div class="row">
         <div class="col-md-12">
             <ul class="list-group">
-                <a href="#" *ngFor="let anime of animes" [class.list-group-item-success]="anime === selectedAnime" class="list-group-item  list-group-item-action" (click)="onClick(anime)">
+                <a routerLink="/anime-details/{{ anime.id }}" *ngFor="let anime of animes" class="list-group-item  list-group-item-action">
                     <span class="badge badge-danger">{{ anime.id }}</span> {{ anime.name }}
                 </a>
             </ul>
         </div>
     </div>
 
-    <app-anime-details [anime]="selectedAnime"></app-anime-details>
+    <!-- <app-anime-details [anime]="selectedAnime"></app-anime-details> -->
 </div>

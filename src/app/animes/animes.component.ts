@@ -18,10 +18,4 @@ export class AnimesComponent implements OnInit {
   ngOnInit(): void {
     this.animeService.getAnimes().subscribe(animes => this.animes = animes);
   }
-
-  onClick(anime: Anime): void {
-    this.selectedAnime = anime;
-
-    this.messageService.message(`You selected ${anime.name} anime that have id = ${anime.id}`);
-  }
 }
