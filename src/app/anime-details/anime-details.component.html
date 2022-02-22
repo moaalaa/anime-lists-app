@@ -1,16 +1,23 @@
-<div class="container">
-    <div class="row my-3" *ngIf="anime">
-        <hr class="w-100">
-        <div class="col-md-12">
-            <h2>{{ anime.name | uppercase }} Details</h2>
-            <form action="">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="anime.name">
-                </div>
-    
-            </form>
+<div class="row my-3" *ngIf="anime">
+    <div class="col-md-12">
+        <h2>{{ anime.name | uppercase }} Details</h2>
+        <form (ngSubmit)="update()">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" [(ngModel)]="anime.name">
+            </div>
 
-            <button type="button" class="btn btn-danger" (click)="goBack()"> Go Back </button>
-        </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <button type="submit" class="btn btn-secondary">
+                    Edit
+                    <i class="fas fa-edit"></i>
+                </button>
+    
+                <button type="button" class="btn btn-danger" (click)="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    Go Back
+                </button>
+            </div>
+        </form>
+
     </div>
 </div>

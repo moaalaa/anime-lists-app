@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-12">
+        <input type="text" class="form-control" id="name" name="name" #animeName (input)="searchAnime(animeName.value)" autocomplete="off" autofocus>
+        <hr>
+    </div>
+
+
+    <div class="col-md-12 my-2">
+        <ul class="list-group">
+            <a *ngFor="let anime of animes$ | async" routerLink="/anime-details/{{ anime.id }}" class="list-group-item  list-group-item-action">
+                <span class="badge badge-danger">{{ anime.id }}</span> {{ anime.name }}
+            </a>
+        </ul>
+    </div>
+</div>

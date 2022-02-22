@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AnimeDetailsComponent } from './anime-details/anime-details.component';
 import { AnimesComponent } from './animes/animes.component';
+import { CreateAnimeComponent } from './create-anime/create-anime.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'animes', component: AnimesComponent },
+  { path: 'animes/create', component: CreateAnimeComponent,  },
   { path: 'anime-details/:id', component: AnimeDetailsComponent },
 ];
 

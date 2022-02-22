@@ -9,7 +9,7 @@ import { Anime } from '../Contrcuts/Anime';
   templateUrl: './anime-details.component.html',
   styleUrls: ['./anime-details.component.css']
 })
-export class AnimeDetailsComponent implements OnInit{
+export class AnimeDetailsComponent implements OnInit {
 
   anime?: Anime;
 
@@ -20,7 +20,7 @@ export class AnimeDetailsComponent implements OnInit{
   ) { }
 
   ngOnInit(): void {
-      this.getAnime();
+    this.getAnime();
   }
 
   getAnime(): void {
@@ -31,6 +31,12 @@ export class AnimeDetailsComponent implements OnInit{
 
   goBack(): void {
     this.location.back();
+  }
+
+  update(): void {
+    if (this.anime) {
+      this.animeService.update(this.anime).subscribe(() => this.goBack());
+    }
   }
 
 }

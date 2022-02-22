@@ -18,4 +18,9 @@ export class AnimesComponent implements OnInit {
   ngOnInit(): void {
     this.animeService.getAnimes().subscribe(animes => this.animes = animes);
   }
+
+  deleteAnime(anime: Anime): void {
+    this.animes = this.animes.filter(a => a.id !== anime.id);
+    this.animeService.delete(anime.id).subscribe();
+  }
 }

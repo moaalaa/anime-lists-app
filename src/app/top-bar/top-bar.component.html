@@ -13,8 +13,11 @@
             <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" routerLink="/dashboard">Dashboard</a>
             </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a class="nav-link" routerLink="/animes" >Animes List</a>
+            </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/animes">Animes List</a>
+                <a class="nav-link" routerLink="/animes/create">Create Anime</a>
             </li>
         </ul>
     </div>
