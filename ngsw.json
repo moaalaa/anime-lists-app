@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1645525546688,
+  "timestamp": 1645605511243,
   "index": "https://moaalaa.github.io/anime-lists-app/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://moaalaa.github.io/anime-lists-app/favicon.ico",
         "https://moaalaa.github.io/anime-lists-app/index.html",
-        "https://moaalaa.github.io/anime-lists-app/main.a0e8ac26ed2346d9.js",
+        "https://moaalaa.github.io/anime-lists-app/main.1b85052ba7378de5.js",
         "https://moaalaa.github.io/anime-lists-app/manifest.webmanifest",
         "https://moaalaa.github.io/anime-lists-app/polyfills.ae76e18bbbedfe4b.js",
         "https://moaalaa.github.io/anime-lists-app/runtime.e58bce5d98c12bdb.js",
@@ -187,8 +187,8 @@
     "https://moaalaa.github.io/anime-lists-app/fa-solid-900.91c80f256c9c6e95.woff2": "07bed153d47f9129a944ee54dd72952deed074c8",
     "https://moaalaa.github.io/anime-lists-app/fa-solid-900.93de309faaf03dc9.woff": "0f6fcbf47ded1a1c6ace0f67383d512b6a053dad",
     "https://moaalaa.github.io/anime-lists-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://moaalaa.github.io/anime-lists-app/index.html": "abc04b2e3e121d24a8d73aa3a5eba314eff205c3",
-    "https://moaalaa.github.io/anime-lists-app/main.a0e8ac26ed2346d9.js": "cb49896cf017e6f29e23cce544819e18abac8e78",
+    "https://moaalaa.github.io/anime-lists-app/index.html": "184caa25252da969ad29dba5c3a5cc7bde3083d2",
+    "https://moaalaa.github.io/anime-lists-app/main.1b85052ba7378de5.js": "538c737086153254c332676ef0e77f2377e604d0",
     "https://moaalaa.github.io/anime-lists-app/manifest.webmanifest": "64ebb27edb2bb98dd39dc8d72f720f1694f44b9b",
     "https://moaalaa.github.io/anime-lists-app/polyfills.ae76e18bbbedfe4b.js": "56a36bea540880fc062c37250e9a249ce10353b8",
     "https://moaalaa.github.io/anime-lists-app/runtime.e58bce5d98c12bdb.js": "6a8882585b6ca003334e5c731dbb153dfaa0c195",
