@@ -13,6 +13,8 @@ export class AnimeDetailsComponent implements OnInit {
 
   anime?: Anime;
 
+  termsAccepted?: string;
+
   constructor(
     private route: ActivatedRoute,
     private animeService: AnimeService,
